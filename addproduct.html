@@ -36,12 +36,57 @@
               <a class="nav-link text-white" href="contact.html">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="login.html">Connection</a>
+              <a id="connectnav" class="nav-link text-white" href="login.html">Connection</a>
             </li>
           </ul>
         </div>
       </nav>
     
+
+
+
+
+<div>
+    <h1>Nouveaux produit : </h1>
+    <p>Nom</p>
+    <input type="text" placeholder="Air pod max">
+    <p>Photo du produit :</p>
+    <input type="file"
+       id="image" name="image"
+       accept="image/png, image/jpeg">
+    <p>marque :</p>
+    <input type="text" placeholder="Apple">
+    <p>description</p>
+    <input type="textarea" placeholder=".................">
+    <p>Prix : </p>
+    <input type="text" placeholder="80 $">
+    <p>Stock disponible</p>
+    <input type="text" placeholder="quantité">
+    <p>declinaison de couleur possible espacé par ";"</p>
+    <input type="textarea" placeholder="gris;bleu;orange">
+    <p>Taille disponible :</p>
+    <input type="checkbox" name="L" id="L">
+    <label for="L">L</label>
+    <input type="checkbox" name="M" id="M">
+    <label for="M">M</label>
+    <input type="checkbox" name="S" id="S">
+    <label for="S">S</label>
+    <input type="checkbox" name="other" id="other">
+    <label for="other">Taille unique</label>
+    <br>
+	<a class="button" href="#popup1">Ajouté l'article</a>
+
+<div id="popup1" class="overlay">
+	<div class="popup">
+		<h2>Tout est bon 😉</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			l'article a été correctement ajouté 😉
+		</div>
+        <button onclick="window.location.href = 'addproduct.html';" >Ajouté un nouveau produit</button>
+        <button id="addproductbackadmin" onclick="window.location.href = 'admin.html';" >Retour au pannel</button>
+	</div>
+</div>
 
 
 
